@@ -21,9 +21,16 @@ const Section = ({ title, children, delay = 0 }: any) => (
 );
 
 // Helper component for project cards
-const ProjectCard = ({ title, desc, stack }: any) => (
-  <div className="bg-slate-800/50 p-6 rounded-2xl border border-white/10 hover:border-indigo-400 hover:bg-slate-700/60 transition-all duration-300 flex flex-col h-full shadow-lg hover:shadow-indigo-500/20 hover:-translate-y-1">
-    <h3 className="text-xl font-bold mb-3 text-white">{title}</h3>
+const ProjectCard = ({ title, desc, stack, link }: any) => (
+  <div className="bg-slate-800/50 p-6 rounded-2xl border border-white/10 hover:border-indigo-400 hover:bg-slate-700/60 transition-all duration-300 flex flex-col h-full shadow-lg hover:shadow-indigo-500/20 hover:-translate-y-1 relative">
+    <div className="flex justify-between items-start mb-3">
+      <h3 className="text-xl font-bold text-white">{title}</h3>
+      {link && (
+        <a href={link} target="_blank" rel="noreferrer" className="text-xs bg-indigo-500/20 text-indigo-300 hover:bg-indigo-500/50 hover:text-white px-2.5 py-1 rounded-md transition-colors border border-indigo-400/30 shadow-sm flex items-center">
+          Play ↗
+        </a>
+      )}
+    </div>
     <p className="text-slate-300 mb-6 text-sm leading-relaxed flex-grow">{desc}</p>
     <div className="flex flex-wrap gap-2 mt-auto">
       {stack.map((s: string) => (
@@ -108,7 +115,7 @@ export default function Home() {
              transition={{ duration: 0.8, delay: 0.6 }}
              className="flex gap-6 justify-center"
           >
-            <a href="https://github.com/indipa9" target="_blank" rel="noreferrer" className="p-4 bg-white/5 rounded-full hover:bg-white/10 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 border border-white/5">
+            <a href="https://github.com/indipa" target="_blank" rel="noreferrer" className="p-4 bg-white/5 rounded-full hover:bg-white/10 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 border border-white/5 shadow-lg">
               <FaGithub className="w-6 h-6" />
             </a>
             <a href="https://www.linkedin.com/in/indipa-perera-6937b5234/" target="_blank" rel="noreferrer" className="p-4 bg-white/5 rounded-full hover:bg-white/10 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 border border-white/5">
@@ -167,6 +174,7 @@ export default function Home() {
               title="Chess App" 
               desc="Interactive multiplayer chess app where players can compete in real-time by creating and joining custom rooms."
               stack={["Javascript", "Node.js"]}
+              link="https://chess-y6j4.onrender.com/"
             />
             <ProjectCard 
               title="SmartHostel" 
