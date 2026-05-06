@@ -139,14 +139,26 @@ export default function Home() {
         <Section title="Professional Experience" delay={0.2}>
           <div className="border-l-2 border-indigo-500/30 pl-8 ml-2 relative">
             <div className="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_rgba(99,102,241,0.8)]"></div>
-            <h3 className="text-2xl font-bold text-white tracking-wide">Intern ERP Technical Consultant</h3>
-            <h4 className="text-indigo-300 mt-2 mb-4 font-medium flex items-center gap-3">
-              <div className="flex items-center gap-3 p-2 bg-slate-800/80 rounded-xl border border-indigo-500/20 shadow-lg backdrop-blur-md">
-                <img src="/altria-logo.png" alt="Altria Logo" className="w-8 h-8 object-contain rounded-md" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-                <span>Altria Consulting</span>
+            
+            <div className="flex justify-between items-start mb-4 gap-4">
+              <div>
+                <h3 className="text-2xl font-bold text-white tracking-wide">Intern ERP Technical Consultant</h3>
+                <h4 className="text-indigo-300 mt-2 font-medium flex items-center gap-3">
+                  <span className="text-xl">Altria Consulting</span>
+                  <span className="bg-white/10 text-gray-300 px-3 py-1 rounded-full text-xs">11/2025 – 2026</span>
+                </h4>
               </div>
-              <span className="bg-white/10 text-gray-300 px-3 py-1 rounded-full text-xs">11/2025 – 2026</span>
-            </h4>
+              
+              <div className="shrink-0 p-2 bg-slate-800/80 rounded-2xl border border-indigo-500/30 shadow-lg backdrop-blur-md hover:scale-105 transition-transform duration-300">
+                <img 
+                  src="/altria-logo.png" 
+                  alt="Altria Logo" 
+                  className="w-20 h-20 object-contain rounded-xl drop-shadow-md" 
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }} 
+                />
+              </div>
+            </div>
+
             <p className="text-gray-400 leading-relaxed text-lg font-light">
               Working exclusively with <strong className="text-gray-200">SAP ERP</strong> systems, supporting implementation and customization activities across client projects. 
               Involved in <strong className="text-gray-200">SAP ABAP development</strong>, system configuration support, data migration, testing, and troubleshooting, while 
