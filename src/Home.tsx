@@ -108,10 +108,10 @@ export default function Home() {
              transition={{ duration: 0.8, delay: 0.6 }}
              className="flex gap-6 justify-center"
           >
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="p-4 bg-white/5 rounded-full hover:bg-white/10 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 border border-white/5">
+            <a href="https://github.com/indipa9" target="_blank" rel="noreferrer" className="p-4 bg-white/5 rounded-full hover:bg-white/10 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 border border-white/5">
               <FaGithub className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-4 bg-white/5 rounded-full hover:bg-white/10 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 border border-white/5">
+            <a href="https://www.linkedin.com/in/indipa-perera-6937b5234/" target="_blank" rel="noreferrer" className="p-4 bg-white/5 rounded-full hover:bg-white/10 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110 border border-white/5">
               <FaLinkedin className="w-6 h-6" />
             </a>
           </motion.div>
