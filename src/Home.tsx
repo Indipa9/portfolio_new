@@ -140,30 +140,29 @@ export default function Home() {
           <div className="border-l-2 border-indigo-500/30 pl-8 ml-2 relative">
             <div className="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_rgba(99,102,241,0.8)]"></div>
             
-            <div className="flex justify-between items-start mb-4 gap-4">
-              <div>
+            <div className="flex flex-col md:flex-row justify-between items-start gap-6">
+              <div className="flex-1">
                 <h3 className="text-2xl font-bold text-white tracking-wide">Intern ERP Technical Consultant</h3>
-                <h4 className="text-indigo-300 mt-2 font-medium flex items-center gap-3">
+                <h4 className="text-indigo-300 mt-2 mb-4 font-medium flex items-center gap-3">
                   <span className="text-xl">Altria Consulting</span>
                   <span className="bg-white/10 text-gray-300 px-3 py-1 rounded-full text-xs">11/2025 – 2026</span>
                 </h4>
+                <p className="text-gray-400 leading-relaxed text-lg font-light">
+                  Working exclusively with <strong className="text-gray-200">SAP ERP</strong> systems, supporting implementation and customization activities across client projects. 
+                  Involved in <strong className="text-gray-200">SAP ABAP development</strong>, system configuration support, data migration, testing, and troubleshooting, while 
+                  collaborating with functional consultants to deliver end-to-end SAP solutions aligned with business requirements.
+                </p>
               </div>
               
-              <div className="shrink-0 bg-white/90 rounded-2xl border border-indigo-500/30 shadow-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 overflow-hidden flex items-center justify-center p-2 mt-2 md:mt-0">
+              <div className="shrink-0 bg-white/90 rounded-2xl border border-indigo-500/30 shadow-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 overflow-hidden flex items-center justify-center p-2 mb-4 md:mb-0">
                 <img 
                   src="/altria-logo.png" 
                   alt="Altria Logo" 
-                  className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-md" 
+                  className="w-32 h-32 md:w-36 md:h-36 object-contain drop-shadow-md" 
                   onError={(e) => { e.currentTarget.style.display = 'none'; }} 
                 />
               </div>
             </div>
-
-            <p className="text-gray-400 leading-relaxed text-lg font-light">
-              Working exclusively with <strong className="text-gray-200">SAP ERP</strong> systems, supporting implementation and customization activities across client projects. 
-              Involved in <strong className="text-gray-200">SAP ABAP development</strong>, system configuration support, data migration, testing, and troubleshooting, while 
-              collaborating with functional consultants to deliver end-to-end SAP solutions aligned with business requirements.
-            </p>
           </div>
         </Section>
 
