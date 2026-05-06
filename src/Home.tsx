@@ -149,11 +149,11 @@ export default function Home() {
                 </h4>
               </div>
               
-              <div className="shrink-0 p-2 bg-slate-800/80 rounded-2xl border border-indigo-500/30 shadow-lg backdrop-blur-md hover:scale-105 transition-transform duration-300">
+              <div className="shrink-0 bg-white/90 rounded-2xl border border-indigo-500/30 shadow-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 overflow-hidden flex items-center justify-center p-2 mt-2 md:mt-0">
                 <img 
                   src="/altria-logo.png" 
                   alt="Altria Logo" 
-                  className="w-20 h-20 object-contain rounded-xl drop-shadow-md" 
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-md" 
                   onError={(e) => { e.currentTarget.style.display = 'none'; }} 
                 />
               </div>
