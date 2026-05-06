@@ -140,8 +140,11 @@ export default function Home() {
           <div className="border-l-2 border-indigo-500/30 pl-8 ml-2 relative">
             <div className="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_rgba(99,102,241,0.8)]"></div>
             <h3 className="text-2xl font-bold text-white tracking-wide">Intern ERP Technical Consultant</h3>
-            <h4 className="text-indigo-300 mt-1 mb-4 font-medium flex items-center gap-3">
-              Altria Consulting 
+            <h4 className="text-indigo-300 mt-2 mb-4 font-medium flex items-center gap-3">
+              <div className="flex items-center gap-3 p-2 bg-slate-800/80 rounded-xl border border-indigo-500/20 shadow-lg backdrop-blur-md">
+                <img src="/altria-logo.png" alt="Altria Logo" className="w-8 h-8 object-contain rounded-md" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <span>Altria Consulting</span>
+              </div>
               <span className="bg-white/10 text-gray-300 px-3 py-1 rounded-full text-xs">11/2025 – 2026</span>
             </h4>
             <p className="text-gray-400 leading-relaxed text-lg font-light">
